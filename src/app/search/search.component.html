@@ -1,0 +1,35 @@
+<div class="banner">
+  <img class="banner-img" src="../../assets/image/covid-19.png" alt="" />
+</div>
+<div class="container-fluid search-box">
+  <form #countryForm="ngForm" action="">
+    <div class="form-group">
+      <input
+        class="form-control"
+        name="country"
+        type="text"
+        [(ngModel)]="country"
+        #Country="ngModel"
+        required
+        placeholder="Please Enter the country name"
+      />
+    </div>
+    <div
+      [hidden]="Country.valid || Country.untouched"
+      class="alert alert-danger"
+    >
+      <span> address is required</span>
+    </div>
+    <div>
+      <button
+        class="btn btn-primary"
+        type="submit"
+        [disabled]="!countryForm.valid"
+        (click)="getCountryData()"
+        routerLink="/country"
+      >
+        SEARCH
+      </button>
+    </div>
+  </form>
+</div>

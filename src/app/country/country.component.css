@@ -1,0 +1,33 @@
+.country-wrapper {
+  border: solid black 1px;
+  margin-bottom: 20px;
+}
+.country-wrapper h1 {
+  text-align: center;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+.info-box {
+  text-align: center;
+  background-color: black;
+}
+
+.info-box p {
+  font-size: 24px;
+}
+
+.number {
+  font-size: 30px !important;
+}
+
+.info {
+  padding: 20px;
+}
+.eachinfo {
+  border: solid black 1px;
+  color: white;
+  box-shadow: 5px 10px 30px red;
+}
