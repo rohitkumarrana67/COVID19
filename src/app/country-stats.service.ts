@@ -5,7 +5,7 @@ import { HttpClient } from "@angular/common/http";
   providedIn: "root",
 })
 export class CountryStatsService {
-  url = "https://corona.lmao.ninja/countries/";
+  url = "https://corona.lmao.ninja/v2/countries/";
   constructor(private http: HttpClient) {}
 
   getCountryData(country) {
